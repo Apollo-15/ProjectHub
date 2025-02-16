@@ -1,23 +1,23 @@
 /* Общие стили для всей страницы */
-body {
-    background-color: #fffdde;
-    display: grid;
-    place-content: center;
-    height: 100vh;
-    margin: 0;
-    font-family: sans-serif;
-}
+/*body {*/
+/*    background-color: #fffdde;*/
+/*    display: grid;*/
+/*    place-content: center;*/
+/*    height: 100vh;*/
+/*    margin: 0;*/
+/*    font-family: sans-serif;*/
+/*}*/
 
 /* Стили для навигационной панели (navbar) */
 nav {
     background-color: #dedcc1;
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(3px);
-    border-radius: 5px;
+    border-radius: 20px;
     box-shadow: 0 5px 30px 0 rgb(210, 208, 182);
-    padding-right: 35px;
+    padding-right: 5px;
     border: 1px solid rgb(194, 192, 170);
-    position: fixed;
+    position: static;
     top: 0;
     left: 0;
     width:100%;
