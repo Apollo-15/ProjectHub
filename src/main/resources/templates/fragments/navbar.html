@@ -2,6 +2,9 @@
 <nav th:fragment="navbar">
     <head>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/daisyui/4.12.23/full.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/daisyui@1.12.0/dist/full.js"></script>
     </head>
     <ul>
         <li class="logo">
@@ -9,13 +12,15 @@
                 <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0m-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0z"/>
             </svg>
         </li>
-        <li><a th:href="@{/home.html}" class="menu"><i class="fa fa-house"></i> Home</a></li>
-        <li><a th:href="@{/projects.html}" class="menu"><i class="fa fa-project-diagram"></i> Projects</a></li>
-        <li><a th:href="@{/aboutme.html}" class="menu"><i class="fa fa-user"></i> About me</a></li>
-        <li><a th:href="@{/media.html}" class="menu"><i class="fa fa-video"></i> Media</a></li>
-        <li><a th:href="@{/news.html}" class="menu"><i class="fa fa-newspaper"></i> News</a></li>
-        <li><a th:href="@{/socialmedia.html}" class="menu"><i class="fa fa-share-alt"></i> Social Media</a></li>
-        <li><a th:href="@{/contact.html}" class="menu"><i class="fa fa-address-book "></i> Contact</a></li>
-        <li><a th:href="@{/support.html}" class="menu"><i class="fa fa-circle-info"></i> Support</a></li>
+        <li><a th:href="@{/home.html}" class="menu"><i class="fa fa-house"> &nbsp;H o m e</i></a></li>
+        <li><a th:href="@{/projects.html}" class="menu"><i class="fa fa-bars-progress"> &nbsp;P r o j e c t s</i></a></li>
+        <li><a th:href="@{/news.html}" class="menu"><i class="fa fa-newspaper"> &nbsp;N e w s</i></a></li>
+        <li><a th:href="@{/aboutme.html}" class="menu"><i class="fa fa-user"> &nbsp;A b o u t &nbsp;&nbsp;M e</i></a></li>
+<!--        <li><a th:href="@{/media.html}" class="menu"><i class="fa fa-video"> M e d i a</i></a></li>-->
+<!--        <li><a th:href="@{/socialmedia.html}" class="menu"><i class="fa fa-share-alt"> S o c i a l  M e d i a</i></a></li>-->
+<!--        <li><a th:href="@{/contact.html}" class="menu"><i class="fa fa-address-book "> C o n t a c t s</i></a></li>-->
+<!--        <li><a th:href="@{/support.html}" class="menu"><i class="fa fa-circle-info"> S u p p o r t</i></a></li>-->
     </ul>
+
+    
 </nav>
