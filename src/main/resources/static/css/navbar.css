@@ -1,23 +1,29 @@
 /* Общие стили для всей страницы */
 /*body {*/
-/*    background-color: #fffdde;*/
+/*    !*background-color: #fffdde;*!*/
 /*    display: grid;*/
-/*    place-content: center;*/
+/*    !*place-content: center;*!*/
 /*    height: 100vh;*/
 /*    margin: 0;*/
 /*    font-family: sans-serif;*/
 /*}*/
 
+body{
+    display: block !important;
+}
+
 /* Стили для навигационной панели (navbar) */
 nav {
-    background-color: #dedcc1;
+    background-color: var(--surface);
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(3px);
     border-radius: 20px;
     box-shadow: 0 5px 30px 0 rgb(210, 208, 182);
     padding-right: 5px;
-    border: 1px solid rgb(194, 192, 170);
+    border: 1px solid var(--border);
     position: static;
+    display: block !important;
+    color: var(--text-primary);
     top: 0;
     left: 0;
     width:100%;
@@ -34,7 +40,7 @@ ul {
 }
 
 ul li {
-    color: #000000;
+    color: var(--text-primary);
     display: grid;
     place-content: center;
     margin: 0;
@@ -42,7 +48,7 @@ ul li {
 
 /* Стили для элементов меню */
 .menu {
-    color: #000000;
+    color: var(--text-primary);
     padding: 0.5rem;
     position: relative;
     text-decoration: none;
