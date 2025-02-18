@@ -7,16 +7,23 @@
     <link rel="stylesheet" th:href="@{/css/navbar.css}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/daisyui/4.12.23/full.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/daisyui@1.12.0/dist/full.js"></script>
 </head>
 <body>
 
 <div th:replace="fragments/navbar :: navbar"></div>
 
-<div>
-    <h1>Welcome to the About Me page!</h1>
-
+<div class="social-media-links">
+    <h2>Follow My Projects</h2>
+    <ul>
+        <li><a href="https://www.youtube.com/@Apollo-15yt" target="_blank"><i class="fab fa-youtube"></i> YouTube</a></li>
+        <li><a href="https://github.com/Apollo-15" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+        <li><a href="https://www.curseforge.com/members/apollo_15/projects" target="_blank"><i class="fa fa-cogs"></i> CurseForge</a></li>
+        <li><a href="https://x.com/Apollo_15x" target="_blank"><i class="fab fa-x-twitter"></i> X (Twitter)</a></li>
+    </ul>
 </div>
 
-<script th:src="@{/js/script.js}"></script>
+<script th:src="@{/js/navbar.js}"></script>
 </body>
 </html>
