@@ -11,18 +11,51 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/daisyui/4.12.23/full.css"/>
     <script src="https://cdn.jsdelivr.net/npm/daisyui@1.12.0/dist/full.js"></script>
 </head>
-<body>
-
+<body >
+<!-- Навбар -->
 <div th:replace="fragments/navbar :: navbar"></div>
 
-<div>
-    <h1>Welcome to the Home page!</h1>
+ Главный контейнер с рамкой
+<div class="container mx-auto p-6">
+    <!-- Секция с рамкой -->
+    <div class="border-4 rounded-lg p-6 " style="background-color: var(--surface); border-color: var(--border); box-shadow: 0 5px 30px var(--text-secondary);">
+        <!-- Приветствие -->
+        <section class="welcome-section text-center">
+            <!-- Здесь изображение игры -->
+<!--            <img src="images/barkcraft2.0bg.jpg" alt="Featured Game" class="mx-auto mb-6 rounded-lg shadow-lg w-full md:w-3/4 lg:w-2/3" />-->
 
+            <!-- Логотип игры -->
+            <img src="images/barkcraft2.0ad.png" alt="Game Logo" class="mx-auto mb-6 rounded-lg shadow-lg w-full md:w-3/4 lg:w-2/3" />
 
+<!--            <p class="mt-4 text-lg text-gray-600">Discover my latest indie games, mods, and more!</p>-->
+        </section>
+
+        <!-- Описание о себе -->
+        <section class="about-me mt-10">
+            <h2 class="text-2xl font-semibold">About Me</h2>
+            <p class="mt-2">
+                I’m an indie developer passionate about creating immersive games and unique mods. My journey started in 2024, and I’ve been crafting experiences ever since!
+            </p>
+        </section>
+
+        <!-- Главный проект -->
+        <section class="featured-project mt-10">
+            <h2 class="text-2xl font-semibold">Featured Project</h2>
+            <div class="card mt-4 p-4 border rounded-lg shadow-md">
+                <h3 class="text-xl font-bold">Project Name</h3>
+                <p class="mt-2">Short description of the featured project. Check out more on the Projects page.</p>
+                <a href="/projects" class="text-blue-500 underline mt-4 inline-block">View All Projects</a>
+            </div>
+        </section>
+    </div>
 </div>
+
+<!-- Футер -->
+<div th:replace="fragments/footer :: footer"></div>
 
 <script th:src="@{/js/themeswitcher.js}"></script>
 <script th:src="@{/js/navbar.js}"></script>
-<div th:replace="fragments/footer :: footer"></div>
 </body>
+
+
 </html>
