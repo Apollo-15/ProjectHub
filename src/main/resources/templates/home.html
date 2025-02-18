@@ -12,25 +12,17 @@
     <script src="https://cdn.jsdelivr.net/npm/daisyui@1.12.0/dist/full.js"></script>
 </head>
 <body >
-<!-- Навбар -->
 <div th:replace="fragments/navbar :: navbar"></div>
 
- Главный контейнер с рамкой
 <div class="container mx-auto p-6">
     <!-- Секция с рамкой -->
     <div class="border-4 rounded-lg p-6 " style="background-color: var(--surface); border-color: var(--border); box-shadow: 0 5px 30px var(--text-secondary);">
-        <!-- Приветствие -->
         <section class="welcome-section text-center">
-            <!-- Здесь изображение игры -->
-<!--            <img src="images/barkcraft2.0bg.jpg" alt="Featured Game" class="mx-auto mb-6 rounded-lg shadow-lg w-full md:w-3/4 lg:w-2/3" />-->
-
-            <!-- Логотип игры -->
-            <img src="images/barkcraft2.0ad.png" alt="Game Logo" class="mx-auto mb-6 rounded-lg shadow-lg w-full md:w-3/4 lg:w-2/3" />
+            <img src="images/forsite.png" alt="Game Logo" class="mx-auto mb-6 rounded-lg shadow-lg w-full md:w-3/4 lg:w-/5" />
 
 <!--            <p class="mt-4 text-lg text-gray-600">Discover my latest indie games, mods, and more!</p>-->
         </section>
 
-        <!-- Описание о себе -->
         <section class="about-me mt-10">
             <h2 class="text-2xl font-semibold">About Me</h2>
             <p class="mt-2">
@@ -38,7 +30,6 @@
             </p>
         </section>
 
-        <!-- Главный проект -->
         <section class="featured-project mt-10">
             <h2 class="text-2xl font-semibold">Featured Project</h2>
             <div class="card mt-4 p-4 border rounded-lg shadow-md">
@@ -50,7 +41,6 @@
     </div>
 </div>
 
-<!-- Футер -->
 <div th:replace="fragments/footer :: footer"></div>
 
 <script th:src="@{/js/themeswitcher.js}"></script>
