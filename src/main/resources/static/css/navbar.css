@@ -13,13 +13,13 @@ body{
     box-shadow: 0 5px 30px var(--text-secondary);
     padding-right: 5px;
     border: 1px solid var(--border);
-    position: static;
+    position: relative;
     display: block flex;
     color: var(--text-primary);
     top: 0;
     left: 0;
     width:100%;
-    z-index: 0;
+    z-index: 100;
 }
 
 /* Стили для списка меню */
