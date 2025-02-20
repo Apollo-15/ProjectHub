@@ -7,4 +7,4 @@ function changeSlide() {
     slides[currentSlide].style.display = 'block';
 }
 
-setInterval(changeSlide, 5000);
+setInterval(changeSlide, 8000);

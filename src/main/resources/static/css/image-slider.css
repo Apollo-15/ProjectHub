@@ -14,9 +14,10 @@
     opacity: 1;
 }
 
-.btn-link {
+.btn {
     padding: 12px 24px;
     background-color: var(--text-primary);
+    text-shadow: 2px 2px 8px var(--text-primary);
     border-radius: 8px;
     border: none;
     font-size: 16px;
@@ -24,11 +25,11 @@
     transition: transform 0.3s ease, opacity 0.5s ease;
 }
 
-.carousel-item .btn-link:hover {
+.carousel-item .btn.btn-primary:hover {
     transform: scale(1.1);
 }
 
-.carousel-item .btn-link {
+.carousel-item .btn {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
     animation: fadeInTextAndButton 0.5s forwards;
