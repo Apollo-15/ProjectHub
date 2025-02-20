@@ -3,3 +3,79 @@
     height: 650px;
     object-fit: cover;
 }
+.carousel-item {
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    animation: fadeInSlide 0.5s forwards, fadeInTextAndButton 0.5s forwards;
+}
+
+.carousel-item.active {
+    opacity: 1;
+}
+
+.btn-link {
+    padding: 12px 24px;
+    background-color: var(--text-primary);
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.5s ease;
+}
+
+.carousel-item .btn-link:hover {
+    transform: scale(1.1);
+}
+
+.carousel-item .btn-link {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    animation: fadeInTextAndButton 0.5s forwards;
+}
+
+.carousel-item .flex-col p {
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px var(--text-primary);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    animation: fadeInTextAndButton 0.5s forwards;
+}
+
+.carousel-item.active .flex-col p {
+    opacity: 1;
+    transform: translateY(0);
+    animation: none;
+}
+
+.carousel-item.active .btn-link {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    animation: fadeInTextAndButton 0.5s forwards;
+}
+
+@keyframes fadeInSlide {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInTextAndButton {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.carousel-item.active .flex-col {
+    animation: fadeInTextAndButton 0.5s forwards;
+}

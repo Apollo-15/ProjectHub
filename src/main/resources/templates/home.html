@@ -25,34 +25,39 @@
 
 <div class="container mx-auto p-6">
     <div class="border-4 rounded-3xl p-6 " style="background-color: var(--surface); border-color: var(--border); box-shadow: 0 5px 30px var(--text-secondary);">
-        <div class="carousel w-full">
+        <div class="carousel w-full relative">
             <div id="slide1" class="carousel-item relative w-full">
-                <img src="images/forsite_barkcraft2.0.png" alt="Image 2" class="image rounded-3xl w-full" />
-                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                    <a href="#slide3" class="btn btn-circle">❮</a>
-                    <a href="#slide2" class="btn btn-circle">❯</a>
+                <img src="images/forsite_barkcraft2.0.png" alt="Image 1" class="image rounded-3xl w-full" />
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-center items-center flex-col slide-animation">
+                    <p class="text-white text-xl mb-4">Текст над кнопкой</p>
+                    <button class="btn-link text-white transition-opacity opacity-0 hover:opacity-100" onclick="window.location.href='https://link1.com'">Перейти</button>
                 </div>
             </div>
+
             <div id="slide2" class="carousel-item relative w-full">
                 <img src="images/forsite_barkcraft1.2.png" alt="Image 2" class="image rounded-3xl w-full" />
-                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                    <a href="#slide1" class="btn btn-circle">❮</a>
-                    <a href="#slide3" class="btn btn-circle">❯</a>
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-center items-center flex-col slide-animation">
+                    <p class="text-white text-xl mb-4">Текст над кнопкой</p>
+                    <button class="btn-link text-white transition-opacity opacity-0 hover:opacity-100" onclick="window.location.href='https://link2.com'">Перейти</button>
                 </div>
             </div>
+
             <div id="slide3" class="carousel-item relative w-full">
                 <img src="images/forsite_minefear.png" alt="Image 3" class="image rounded-3xl w-full" />
-                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                    <a href="#slide2" class="btn btn-circle">❮</a>
-                    <a href="#slide1" class="btn btn-circle">❯</a>
+                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-center items-center flex-col slide-animation">
+                    <p class="text-white text-xl mb-4">Текст над кнопкой</p>
+                    <button class="btn-link text-white transition-opacity opacity-0 hover:opacity-100" onclick="window.location.href='https://link3.com'">Перейти</button>
                 </div>
             </div>
         </div>
 
+
+
+
         <section class="about-me mt-10">
             <h2 class="text-2xl font-semibold">About Me</h2>
             <p class="mt-2">
-                I’m an indie developer passionate about creating immersive games and unique mods. My journey started in 2024, and I’ve been crafting experiences ever since!
+                I’m an indie developer
             </p>
         </section>
 
@@ -69,6 +74,7 @@
 
 <div th:replace="fragments/footer :: footer"></div>
 <script th:src="@{/js/navbar.js}"></script>
+<script th:src="@{/js/image-slider.js}"></script>
 </body>
 
 
